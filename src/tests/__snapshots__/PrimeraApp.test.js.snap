@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing PrimeraApp should return <PrimeraApp />  1`] = `ShallowWrapper {}`;
+exports[`Testing PrimeraApp should return <PrimeraApp />  1`] = `
+<Fragment>
+  <h1>
+     
+    Hi, I'm Emilio
+     !!!
+  </h1>
+  <p>
+    Soy un subtitulo
+  </p>
+</Fragment>
+`;
