@@ -1,13 +1,14 @@
+import React from "react";
 import "@testing-library/jest-dom";
-import {render} from '@testing-library/react'
 import PrimeraApp from "../PrimeraApp";
+import {shallow} from 'enzyme'
  
 describe("Testing PrimeraApp", () => {
-  test("should return saludo:string", () => {
+  test("should return <PrimeraApp /> ", () => {
     const greeting = `Hi, I'm Emilio`;
 
-    const wrapper = render(<PrimeraApp saludo="" />)
+    const wrapper = shallow(<PrimeraApp />)
 
-    expect(wrapper.getByText(saludo)).toBeInTheDocument(greeting)
+    expect(wrapper).toMatchSnapshot()
   });
 });
